@@ -1,3 +1,12 @@
+p, li {
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
@@ -19,6 +28,22 @@
     grid-area: sidebar;
     background-color: aliceblue;
     padding: 5% 10%;
+    width: 120%;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+    
+    
+}
+
+.sidebar > ul {
+    align-items: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .main {
@@ -40,13 +65,17 @@
     margin: 0;
     padding: 0;
     line-height: 1.2;
+    font-family: sans-serif;
 }
 
 .flex-container > .date-div {
-    width: 130px;
+    box-sizing: border-box;
+    width: 140px;
 }
 
-
+p.info-details {
+    width: 500px;
+}
 
 #header-title {
     display: inline-block;
@@ -61,5 +90,5 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin: 0 30px;
+    margin: 0 auto;
 }
