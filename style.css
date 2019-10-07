@@ -1,3 +1,42 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-areas: 
+        'header header header header header header'
+        '. sidebar main main main .';
+        grid-gap: 5% 10%;
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(33, 180, 28);
+    text-align: center;
+    padding: 30px;
+
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: aliceblue;
+    padding: 5% 10%;
+}
+
+.main {
+    grid-area: main;
+
+}
+
+#header-title {
+    display: inline-block;
+    margin: 0 auto;
+    width: 60%;
+    border: 2px solid white;
+    color: white;
+}
+
 #profile-pic {
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 30px;
 }
